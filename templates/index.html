@@ -1,0 +1,160 @@
+<!DOCTYPE html>             
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ritesh Photography</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="StyleSheet" href="main.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js"
+        crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='fav.ico') }}">
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <div class=" nav-section">
+                <div class="brand-and-navBtn">
+                    <span class="brand-name">
+                        RITESHLAB
+                    </span>
+                    <span class="navBtn flex">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                
+                <!-- navigation menu -->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <span class="search-icon">
+                    <i class="fas fa-camera"></i>
+                </span>
+            </div>
+            
+            <div class="container about">
+                <div class="about-content">    
+                    <div class="about-img flex">
+                        <img src="/static/images/12.jpg" alt="photographer img">
+                    </div>
+                    <h2>Ritesh Ranjan Puhan</h2>
+                    <h3>Photographer | Traveller</h3>
+                    <blockquote>"Photography is a way of feeling, of loving, of touching, What you have caught on film is captured for ever ... It remembers little things, long after you have forgotten everything "
+                        <span>-Aaron siskind</span>
+                    </blockquote>
+                </div>
+                
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100006174315757" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ritesh_click._?utm_medium=copy-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <!--li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li-->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--end of header-->
+        
+        <!--main-->
+        <section class="section-one">
+            <div class="container">
+                <div class="sec-one-left">    
+                    <!-- image here -->
+                    <div>
+                        <h3>Photography according to me</h3>
+                        <p>“When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.”</p>
+                        <!--a href="#" class="btn">view all</a-->
+                    </div>
+                </div>
+                
+                <div class="sec-one-right">
+                    <div class="work-content">
+                        <h3>AMAZING TEAM WORK WITH PROFESSIONAL PHOTOGRAPHER</h3>
+                        <p>Photographs are the universal language of our era. Everyone has hundreds, maybe thousands in their pocket. Weightless, they turn the scale when the argument is: What happened here? Images don’t age or warp. A great photographer’s strings never go out of tune.</p>
+                        <a href="#" class="btn">view all</a>
+                    </div>
+                    <div class="work-imgs">
+                        <div class="work-img-1">
+                            <!-- image here -->
+                        </div>
+                        <div class="work-img-2">
+                            <!-- image here -->
+                        </div>
+                    </div>
+                    <h3>"Taking an image, freezing a moment, reveals how rich reality truly is."</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-two">
+            <div class="container">
+                <h2>FOLLOW US ON INSTAGRAM</h2>
+                <span>@ritesh_click._</span>
+                <div class="insta-imgs">
+                    <div>
+                        <img src="/static/images/inst 1.jpg">
+                        <div class="icon-overlay flex">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/static/images/inst 2.jpg">
+                        <div class="icon-overlay flex">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/static/images/inst 3.jpg">
+                        <div class="icon-overlay flex">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/static/images/inst 4.jpg">
+                        <div class="icon-overlay flex">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of main-->
+        
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer-container container">
+                <div>
+                    <h2>Ritesh Ranjan Puhan</h2>
+                    <p>My name is Ritesh, I am from Cuttack, more precisely from the Silver city of Odisha. The love for photography began in 2016 when I spontaneously bought my first SLR camera.
+        I found the first attempts to photograph insects and other small animals, to photograph the flowers in the garden or to capture water droplets in flight extremely exciting. </p>
+                </div>
+                <div>
+                    <h3>Free Subscription!</h3>
+                    <p>I really enjoy photography and it has become a very important part of my life.<br>Best wishes,<br>Ritesh</p>
+                    
+                    <div class="subs">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="come to contact">
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; Copyright ritesh_click</p>
+        </footer>
+<!--end of footer-->
+        <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+    </body>
+</html>
